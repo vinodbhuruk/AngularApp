@@ -1,0 +1,61 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+ <!-- <h1>
+    Welcome to {{ title }}!
+  </h1>-->
+
+  <h2>
+   <b>Welcome To Login Page</b> 
+  </h2>
+  
+
+  
+  
+
+</div>
+<div>
+  <label for=FirstName><b>FirstName</b></label><input type="text" name="fname" ><br>
+  
+
+  <label for=LastName><b>LastName</b></label><input type="text" name="fname" ><br>
+   
+  
+  <label for=DOB><b>DOB</b></label><input type="number" name="fname" ><br>
+   
+
+  <label for=ContactNo><b>ContactNo</b></label> <input type="number" name="fname"  ><br>
+  
+
+  
+  <label for=Gender><b>Gender</b></label>
+  <form action="">
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other
+  </form>
+  <br>
+  
+
+  
+
+  <ul>
+    <li>
+      <h2><button class="googleButtonCls" target="_blank" rel="noopener" (click)="handleClick()">SUBMIT</button></h2>
+   
+   
+   
+    </li>
+    
+  </ul>
+
+
+  <a routerLink="/taketocustomer" routerLinkActive="active">Customer</a><br>
+  <a routerLink="/taketoheroes" routerLinkActive="active">Heroes</a><br>
+
+
+
+  
+</div>
+
+
+<router-outlet></router-outlet>
