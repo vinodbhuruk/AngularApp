@@ -1,26 +1,21 @@
-
-  .abc {
+.lab{
     color: brown;
-    padding-right: 50px;
-    line-height: 50px;
-    
-}
-
-.abc2 {
-    color: brown;
-    padding-right: 87px;
-    line-height: 50px;
-}
-.abc9 {
-    color: brown;
-    padding-right: 240px;
-    line-height: 50px;
-}
-.vishal{
-    color: brown;
-    padding-right: 240px;
+    padding-right: 100px;
     line-height: 50px;
 
+}
+.link
+{
+    background-color: red;
+    border:solid black;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoratio:to-upper-case($string: "register");
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 15px;
+    cursor: pointer;
 }
 
    

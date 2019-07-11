@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class RegisterComponent implements OnInit {
 
   constructor() { }
 
@@ -15,9 +15,6 @@ export class LoginComponent implements OnInit {
   handleClick(event: Event) {
     window.open("https://www.google .com");
     console.log("Click!", event);
-  }
-  navigateToRgistrationPage(event: Event){
-    
   }
 
 }
