@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,17 +8,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
 
-  handleClick(event: Event) {
-    window.open("https://www.google .com");
-    console.log("Click!", event);
-  }
-  navigateToRgistrationPage(event: Event){
-    
-  }
 
-}
+
+
+  validate() {
+    // var username;
+    //var password;
+
+    var username = (<HTMLInputElement>document.getElementById("username")).value;
+
+    var password = (<HTMLInputElement>document.getElementById("password")).value;
+
+    if (username == "vinod" && password == "vinod123") {
+      alert("Login successfully");
+      this.router.navigate(["/taketocustomer"]);
+       
+      return false;
+    }
+    else {
+      alert("Login failed");
+    }
+  }
+} 
+
+

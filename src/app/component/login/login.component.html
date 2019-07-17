@@ -6,14 +6,15 @@
     <div><img src="assets/lo.jpg" alt="Test Image" width="500" height="300" align="center" />
     </div><br>
     <div>
-      <label class="lab" for=username><b>username</b></label><input type="text" name="fname"><br>
-      <label class="lab" for=password><b>password</b></label><input type="text" name="fname"><br>
+      <label class="lab" for=username><b>username</b></label><input type="text" name="username" id="username"><br>
+      <label class="lab" for=password><b>password</b></label><input type="text" name="password" id="password"><br>
       <h2 align="center"><button class="googleButtonCls" target="_blank" rel="noopener"
-        (click)="handleClick()">Log in</button> 
+        (click)="validate()">Log in</button> 
         <!-- <button class="googleButtonCls" target="_blank" rel="noopener"
           (click)="navigateToRgistrationPage()">Register</button></h2> -->
 
           <a class="link" routerLink="/taketoregister" routerLinkActive="active">Register</a>
+          
       </h2> 
     </div>
   </div>
